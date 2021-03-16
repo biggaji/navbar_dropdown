@@ -1,0 +1,39 @@
+// padding  variables to be map
+//device breakpoints
+$width-xs: 0px;
+$width-sm: 544px;
+$width-md: 768px;
+$width-lg: 1012px;
+$width-xl: 1280px;
+
+$display: (
+    "f": flex,
+    "b": block,
+    "in": inline,
+    "in-b": inline-block
+);
+
+$justify-content: (
+    "s": start,
+    "e": end,
+    "c": center,
+    "sb": space-between,
+    "sa": space-around,
+    "se": space-evenly
+);
+
+$padding: (
+    "p1": 2px,
+    "p2": 4px,
+    "p3": 6px,
+    "p4": 8px,
+    "p5": 10px
+);
+
+$breakpoints: (
+    "xs": $width-xs,
+    "sm": $width-sm,
+    "md": $width-md,
+    "lg": $width-lg,
+    "xl": $width-xl
+)
