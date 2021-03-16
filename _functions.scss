@@ -1,0 +1,15 @@
+@function padding($paddSize) {
+    @return map-get($padding, $paddSize);
+}
+
+@function breakpoint($variant) {
+    @return map-get($breakpoints, $variant);
+}
+
+@function display($variant) {
+    @return map-get($display, $variant);
+}
+
+@function justifyDirection($variant) {
+    @return map-get($justify-content, $variant);
+}
