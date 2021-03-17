@@ -19,27 +19,52 @@ body {
 header {
   width: 100%;
   height: auto;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 10px 40px;
 }
 header .nav_container {
+  align-items: center;
   width: 100%;
 }
 header .nav_container .nav_content_left {
+  align-items: center;
+}
+header .nav_container .nav_content_left .logo {
+  margin-right: 1rem;
+  width: auto;
+  height: auto;
+}
+header .nav_container .nav_content_left .logo > svg {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+header .nav_container .nav_content_left .search_box {
+  margin-right: 1rem;
+}
+header .nav_container .nav_content_left .search_box > form {
+  width: auto;
+}
+header .nav_container .nav_content_left .search_box > form > input {
   width: 100%;
+  padding: 0.3125rem 0.75rem;
+  outline: none;
+  border-radius: 0.25rem;
 }
 header .nav_container .nav_content_left .nav_items_container {
+  margin-right: 1rem;
   list-style-type: none;
 }
-header .nav_container .nav_content_left .nav_items_container .nav_content_right {
-  width: 100%;
-}
-header .nav_container .nav_content_left .nav_items_container .nav_content_right .nav_item {
+header .nav_container .nav_content_left .nav_items_container .nav_item {
   display: inline-block;
+  margin-left: 1rem;
 }
-header .nav_container .nav_content_left .nav_items_container .nav_content_right .nav_item > .nav_item_link {
+header .nav_container .nav_content_left .nav_items_container .nav_item > .nav_item_link {
   display: inline-block;
   text-decoration: none;
   color: black;
   font-size: 1rem;
+  padding: 0.15rem 0;
+  border: 1px solid green;
+}
+header .nav_container .nav_content_right {
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
