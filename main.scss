@@ -16,28 +16,53 @@ body {
 header {
      width: 100%;
      height:auto;
-     padding-right: padding(p5) * 4;
-     padding-left: padding(p5) * 4;
+     padding: padding(p5)  padding(p5) * 4;
      & .nav_container {
-        width:100%;
+         align-items: center;
+         width:100%;
         & .nav_content_left {
-            width: 100%;
-            & .nav_items_container {
-                list-style-type: none;
-                & .nav_content_right {
-                    width:100%;
-
-                    & .nav_item {
-                        display: display(in-b);
-                        &> .nav_item_link {
-                            display: display(in-b);
-                            text-decoration: none;
-                            color: black;
-                            font-size: 1rem;
-                        }
+            align-items: center;
+            & .logo {
+                margin-right: 1rem;
+                width: auto;
+                height: auto;
+                > svg {
+                    width: 1.875rem;
+                    height: 1.875rem;
+                }
+            }
+            & .search_box {
+                margin-right: 1rem;
+                 > form {
+                     width: auto;
+                    > input {
+                        width: 100%;
+                        padding: 0.3125rem 0.75rem;
+                        outline: none;
+                        border-radius: 0.25rem;
                     }
                 }
             }
+            & .nav_items_container {
+                margin-right: 1rem;
+                list-style-type: none;
+                & .nav_item {
+                    display: display(in-b);
+                    margin-left: 1rem;
+                    &> .nav_item_link {
+                        display: display(in-b);
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1rem;
+                        padding: 0.15rem 0;
+         border: 1px solid green;
+                        
+                    }
+                }
+            }
+        }
+        & .nav_content_right {
+            align-items: center;
         }
      }
 }
